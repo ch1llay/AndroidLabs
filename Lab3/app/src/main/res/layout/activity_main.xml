@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:fitsSystemWindows="true"-->
+<!--        >-->
+
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Чапаев И. А.\n20ВП1"
+        android:textSize="40sp"/>
+    />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="437dp"
+        android:layout_height="142dp"
+        android:backgroundTintMode="add"
+        android:gravity="center_horizontal|center_vertical"
+        android:onClick="changeColor"
+        android:text="@string/button_text"
+        android:textSize="40sp" />
+
+
+
+</LinearLayout>
