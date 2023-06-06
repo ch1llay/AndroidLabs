@@ -35,6 +35,13 @@ class MainActivity : AppCompatActivity() {
             LocalTime.parse("12:10:10")
         )
 
+        listAdapter.trains += Train(
+            "Пенза",
+            "Сочи",
+            LocalTime.parse("10:10:10"),
+            LocalTime.parse("12:10:10")
+        )
+
         listView.adapter = listAdapter
         listView.layoutManager = LinearLayoutManager(this)
 
@@ -43,12 +50,17 @@ class MainActivity : AppCompatActivity() {
 
         button.setOnClickListener {
             listAdapter.trains += Train(
-                "Москва",
-                "Казань",
-                LocalTime.parse("10:10:10"),
+                "СПБ",
+                "Новосиб",
+                LocalTime.parse("12:10:10"),
                 LocalTime.parse("12:10:10")
             )
             listAdapter.notifyItemInserted(listAdapter.itemCount - 1)
+            Toast.makeText(
+                this,
+                "Нажата кнопка",
+                Toast.LENGTH_SHORT
+            ).show()
         }
     }
 }
